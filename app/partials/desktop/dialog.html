@@ -1,4 +1,4 @@
-<a class="im_dialog" ng-mousedown="dialogSelect(dialogMessage.peerString, dialogMessage.unreadCount == -1 && dialogMessage.mid)">
+<a class="im_dialog" ng-show="toggleDialogCard" ng-mousedown="dialogSelect(dialogMessage.peerString, dialogMessage.unreadCount == -1 && dialogMessage.mid)">
 
   <div class="im_dialog_meta pull-right text-right">
     <div class="im_dialog_date" ng-bind="dialogMessage.dateText"></div>
@@ -73,6 +73,6 @@
   </div>
 
 </a>
-<a class="btn_toggle_dialog">
+<a class="btn_toggle_dialog" ng-click="toggleDialog(e)">
 	<span class="text_rotate">x</span>
 </a>

@@ -691,6 +691,11 @@ angular.module('myApp.controllers', ['myApp.i18n'])
     var typingTimeouts = {}
     var contactsShown
 
+    $scope.toggleDialogCard = true;
+    $scope.toggleDialog = function(e) {
+        $scope.toggleDialogCard = !$scope.toggleDialogCard;
+    }
+
     $scope.$on('dialogs_need_more', function () {
       // console.log('on need more')
       showMoreDialogs()

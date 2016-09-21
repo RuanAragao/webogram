@@ -3,12 +3,14 @@
 /* app common css */
 
 html {
-  background: #e7ebf0;
+  //background: #e7ebf0;
+	background-image: url(https://unsplash.it/1280/900/?random);
+	background-size: cover;
   overflow: visible;
 }
 
 body {
-  color: #000;
+  color: #333;
   background: none;
   font: 12px/18px 'Open Sans', "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif;
   overflow: hidden;
@@ -1257,10 +1259,12 @@ i.icon-verified {
 
   a.im_dialog {
     clear: both;
+		float: left;
     overflow: hidden;
     color: #000;
     padding: 8px 9px;
     border-radius: 0;
+		width: 90%;
 
     &:hover,
     &_selected {
@@ -1277,14 +1281,34 @@ i.icon-verified {
   .active {
     a.im_dialog {
       border-radius: 0;
-      background-color: #6490b1;
+      //background-color: #6490b1;
+			background-color: #444;
 
       &:hover,
       &_selected {
-        background-color: #6490b1;
+        //background-color: #6490b1;
+				background-color: #444;
       }
     }
   }
+
+	a.btn_toggle_dialog {
+		//background-color: #ecf0f1;
+		border-left: 1px solid rgba(255,255,255,0.2);
+		border-radius: 0;
+		float: left;
+		padding: 22px 5px;
+		width: 10%;
+
+		.text_rotate {
+			transform: rotate(90deg);
+		}
+
+		&:hover,
+		&:focus {
+			background-color: #bdc3c7;
+		}
+	}
 }
 
 .im_dialogs_modal_list {

@@ -107,6 +107,18 @@
       } else {
         checkReady()
       }
+
+      $('button').click(function(){alert('alaooaoaoak')});
+      $('button').on('click', function(e) {
+        alert('clicked');
+        $('.btn-toggle-chat').closest('li').css('left', '-90%');
+      });
+
     })
   })
+  $(document).ready(function (e) {
+      console.log($('.btn_toggle_dialog'));
+      $('.btn_toggle_dialog').click(function(){alert('Aloha')});
+      $('.btn_toggle_dialog').on('click', function(e){$(this).closest('.im_dialog_wrap').css('left', '-90%')});
+  });
 })()

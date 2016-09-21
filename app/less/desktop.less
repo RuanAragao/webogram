@@ -7,7 +7,8 @@
     max-width: 1010px;
     margin: 0 auto;
     height: 48px;
-    background: #5682a3;
+    //background: #5682a3;
+		background: #333;
   }
 
   &_logo_wrap {
@@ -541,7 +542,13 @@
 }
 
 .im_page_wrap {
-  background: #fff;
+  //background: #fff;
+	background: rgba(255, 255, 255, 0.2);
+	/*-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);*/
   max-width: 1010px;
   min-width: 300px;
   margin: 0 auto;
@@ -550,11 +557,28 @@
 
   border-radius: 0 0 3px 3px;
 
-  border-left: 1px solid #dfe5ec;
-  border-right: 1px solid #dfe5ec;
-  border-bottom: 1px solid #d2dbe3;
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 
   overflow: hidden;
+	position: relative;
+
+	&:before {
+		content: '';
+		//background: #fff;
+		background: rgba(255, 255, 255, 0.2);
+		-webkit-filter: blur(5px);
+		-moz-filter: blur(5px);
+		-o-filter: blur(5px);
+		-ms-filter: blur(5px);
+		filter: blur(5px);
+		height: 100%;
+		width: 1010px;
+		min-width: 300px;
+		margin: 0 auto;
+		position: absolute;
+	}
 }
 
 .footer {
